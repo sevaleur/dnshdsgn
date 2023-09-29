@@ -1,0 +1,16 @@
+$color-background: #171008;
+$color-stone-white: #E2E3DE;
+
+$ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+$ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+$font-italiana: 'Italiana';
+$font-morganite: 'Morganite';
+
+$z-indexes: (
+  'preloader',
+  'navigation',
+  'link',
+  'content',
+  'canvas'
+);

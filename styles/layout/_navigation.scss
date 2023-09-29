@@ -1,0 +1,63 @@
+.navigation
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  z-index: z('navigation');
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  opacity: 0.0;
+
+  &__logo
+  {
+    margin-left: 4rem;
+    margin-top: 4rem;
+
+    &__text
+    {
+      @extend %spec-70;
+
+      line-height: 5rem;
+      letter-spacing: 0.2rem;
+
+      color: $color-stone-white;
+      vertical-align: center;
+
+      @include media('<=tablet')
+      {
+        font-size: 8rem;
+        line-height: 6rem;
+
+      }
+    }
+  }
+
+  &__connect
+  {
+    margin-right: 4rem;
+
+    &__link
+    {
+      height: 100%;
+      width: 100%;
+
+      &__text
+      {
+        @extend %desc-25;
+
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid $color-stone-white;
+
+        @include media('<=tablet')
+        {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+extends ../base.pug
+
+block variables
+  - var template = 'home'
+
+block content
+  .home
+
+    .home__title
+        h2.home__title__text!=home.data.title.replace(/\n/g, '<br>')
+
+  p.loading=0

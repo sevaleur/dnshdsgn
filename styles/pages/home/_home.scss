@@ -1,0 +1,52 @@
+.home
+{
+  @extend %cover;
+
+  z-index: z('content');
+
+  opacity: 0.0;
+
+  &__title
+  {
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    &__text
+    {
+      @extend %desc-25;
+
+      @include media('<=tablet')
+      {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+.loading
+{
+  @extend %spec-400;
+
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+
+  opacity: 1.0;
+
+  z-index: z('content');
+
+  @include media('<=tablet')
+  {
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+  }
+}
+
+.ready
+{
+  display: none;
+}

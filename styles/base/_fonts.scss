@@ -1,0 +1,17 @@
+@font-face {
+  font-family: $font-italiana;
+  src: url('../fonts/Italiana-Regular.woff2') format('woff2'),
+      url('../fonts/Italiana-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-morganite;
+  src: url('../fonts/Morganite-medium.woff2') format('woff2'),
+      url('../fonts/Morganite-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

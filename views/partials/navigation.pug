@@ -1,0 +1,7 @@
+nav.navigation
+  .navigation__logo
+    //a.navigation__logo__link(href=nav.data.nav_logo_link)
+    h1.navigation__logo__text!=navigation.data.nav_logo.replace(/\n/g, '<br>')
+  .navigation__connect
+    a.navigation__connect__link(href='mailto:contact@dnshdsgn.com')
+      p.navigation__connect__link__text=navigation.data.connect
